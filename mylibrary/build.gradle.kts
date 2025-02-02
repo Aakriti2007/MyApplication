@@ -45,7 +45,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.Aakriti2007"
                 artifactId = "idauth"
-                version = "2.0"
+                version = "3.0"
 
                 from(components["release"])
             }
