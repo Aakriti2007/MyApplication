@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/authenticateFragment">
+
+    <fragment
+        android:id="@+id/authenticateFragment"
+        android:name="com.example.myapplication.AuthenticateFragment"
+        android:label="fragment_authenticate"
+        tools:layout="@layout/fragment_authenticate" >
+        <action
+            android:id="@+id/action_authenticateFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+        <action
+            android:id="@+id/action_authenticateFragment_to_statusFalseFragment"
+            app:destination="@id/statusFalseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.example.myapplication.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+    <fragment
+        android:id="@+id/statusFalseFragment"
+        android:name="com.example.myapplication.StatusFalseFragment"
+        android:label="fragment_status_false"
+        tools:layout="@layout/fragment_status_false" />
+</navigation>
