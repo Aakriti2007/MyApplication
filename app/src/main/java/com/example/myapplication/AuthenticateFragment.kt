@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import MyApiSdk
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -42,6 +43,7 @@ class AuthenticateFragment : Fragment() {
 
     private fun authenticate() {
         val sdk = MyApiSdk.getInstance()
+
 
         val authRequest = AuthRequest(
             brand = "IOH",

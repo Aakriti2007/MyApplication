@@ -41,9 +41,9 @@ class MyApiSdk private constructor() {
         }
         fun setEnvironment(isProduction: Boolean) {
             val baseUrl = if (isProduction) {
-                "https://prod.api.com/"
+                "https://34.102.220.112.nip.io/id-auth/"
             } else {
-                "https://dev.api.com/"
+                "http://104.199.211.200:7042"
             }
             ApiClient.setBaseUrl(baseUrl)
         }
